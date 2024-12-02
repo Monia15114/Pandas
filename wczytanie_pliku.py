@@ -36,3 +36,6 @@ print(tab_m[['wiek', 'wartosc']].describe())
 print('Za 12 lat osoby z rejestru będą w wieku: ')
 tab['wiek za 12 lat'] = tab['wiek'] + 12
 print(tab)
+
+
+tab.to_excel('Nowy rejestr.xlsx', index=False)
